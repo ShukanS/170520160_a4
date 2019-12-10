@@ -1,0 +1,286 @@
+
+.avatar {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.row-header {
+  display: flex;
+  max-width: 960px;
+  margin: auto;
+}
+
+.column-header-left {
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: left;
+  width: 33%;
+}
+
+.column-header-right {
+  float: left;
+  align-items: center;
+  justify-content: center;
+  width: 66%;
+  margin: 36px;
+}
+
+.column {
+  max-width: 900px;
+  display: flex;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container img{
+  width: 293px;
+}
+
+.flex-container div{
+  margin: 12px;
+  height: 293px;
+  width: 293px;
+}
+
+
+.account {
+  font-size: 28px;
+}
+
+.bio {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+body {
+  font-family: Verdana, Arial;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.row-overlay {
+  display: flex;
+  width: 935px;
+  height: 600px;
+  margin: auto;
+  margin-top: 7%;
+  background-color: white;
+}
+
+.column-overlay-left {
+  display: flex;
+  float: left;
+  align-items: center;
+  justify-content: left;
+  width: 600px;
+  height: 600px;
+}
+
+.imagemobile {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+}
+
+.column-overlay-right {
+  float: left;
+  align-items: center;
+  justify-content: center;
+  width: 335px;
+  height: 600px;
+}
+
+.column-account {
+  display: inline-flex;
+  align-items: center;
+  justify-content: left;
+  height: 12.5%;
+  width: 100%;
+}
+.column-comments {
+  display: inline-flex;
+  justify-content: left;
+  height: 70%;
+  width: 95%;
+}
+
+.column-info {
+  display: inline-flex;
+  justify-content: left;
+  height: 17.5%;
+  width: 100%;
+  text-align: left;
+}
+.row-avatar {
+  display: inline-flex;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+}
+
+.row-avatar2 {
+  display: block;
+  justify-content: center;
+  height: 100%;
+  width: 25%;
+}
+
+.row-text {
+  display: block;
+  justify-content: left;
+  float: none;
+  height: 100%;
+  width: 75%;
+}
+
+.row-text big {
+  color:grey;
+  font-size: 1em;
+}
+
+.column-info big {
+  color:grey;
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+.overlayavatar {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50%;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.bookmark {
+  justify-content: right;
+}
+
+table {
+  border-spacing: 10px;
+  margin-top: 2px;
+}
+
+#myImage {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 950px) {
+  [class*="column-header-left"] {
+    width: 50%;
+  }
+  [class*="column-header-right"] {
+    width: 50%;
+  }
+  [class*="row-overlay"] {
+    width: 610px;
+    height: 450px;
+    margin-top: 20%;
+  }
+  [class*="column-overlay-left"] {
+    width: 450px;
+    height: 450px;
+  }
+  [class*="column-overlay-right"] {
+    width: 220px;
+    height: 390px;
+  }
+  [class*="imagemobile"] {
+    display: none;
+  }
+  .overlayavatar {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  [class*="column-header-left"] {
+    float: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  [class*="row-header"] {
+    display: inline;
+  }
+
+  [class*="column-header-right"] {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+  }
+
+  [class*="bio"] {
+    display: none;
+  }
+
+  .row-overlay {
+    width: 100vw;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .column-comments {
+    display: none;
+  }
+
+
+  .column-overlay-right {
+    display: block;
+  }
+
+  .column-overlay-left {
+    display: none;
+  }
+
+  .column-account {
+    height: 15%;
+  }
+  .imagemobile {
+    display: flex;
+  }
+
+  #myImage2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  #overlay {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-height: 510px) {
+  .row-overlay {
+    margin-top: 7%;
+  }
